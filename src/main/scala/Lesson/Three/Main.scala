@@ -8,7 +8,7 @@ object Main {
   def main(args: Array[String]) : Unit ={
     val cookBook = new CookBook()
 
-    val companionObject = CompanionObject.make(List("Carrot","Beans"),List("Chop carrot and cabbage","Boil both"))
+    val companionObject = CompanionObject(List("Carrot","Beans"),List("Chop carrot and cabbage","Boil both"))
   }
 
 }
