@@ -51,7 +51,7 @@ object Main {
     *
     * @param even
     * @return
-    *    Unapply is called here by Even(halfOfInput) with arg as input to unapply
+    *    Unapply is called here by Even(halfOfInput) with arg as input
     */
   def isEven(even: Int): Option[Int] = even match {
     case Even(halfOfInput) => Some(halfOfInput)
