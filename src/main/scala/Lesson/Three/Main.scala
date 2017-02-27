@@ -13,10 +13,10 @@ object Main {
 
     println(isSimpleDirections(new CookBook().cresps))
 
-    // unapply can be called like this and used like this as well
-    println(Even.unapply(12))
-
     println(isEven(10))
+
+    // unapply can also be called  and used like this
+    println(Even.unapply(12))
 
   }
 
@@ -51,7 +51,7 @@ object Main {
     *
     * @param even
     * @return
-    *    Unapply is used for matching
+    *    Unapply is called here by Even(halfOfInput) with arg as input to unapply
     */
   def isEven(even: Int): Option[Int] = even match {
     case Even(halfOfInput) => Some(halfOfInput)
