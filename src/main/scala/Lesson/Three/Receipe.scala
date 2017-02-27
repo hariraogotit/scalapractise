@@ -14,3 +14,4 @@ class Receipe(
       println("Ingredients " + ingredients)
       println("Directions " + directions)
 }
+
