@@ -18,6 +18,8 @@ object Main {
     // unapply can also be called  and used like this
     println(Even.unapply(12))
 
+    println(compareCaseClasses())
+
   }
 
   /**
@@ -56,6 +58,12 @@ object Main {
   def isEven(even: Int): Option[Int] = even match {
     case Even(halfOfInput) => Some(halfOfInput)
     case _ => None
+  }
+
+  def compareCaseClasses():Boolean = {
+     val obj1 = CaseClassRemovesBoilerPlateCode(List.empty,List.empty)
+     val obj2 = CaseClassRemovesBoilerPlateCode(List.empty,List.empty)
+     return obj1 == obj2
   }
 
 }
