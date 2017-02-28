@@ -70,6 +70,12 @@ case class KiloGrams(amount: Double) extends Mass{
   override def toString: String = amount + "kg"
 }
 
+/**
+  * Called the following in scala console
+  * Lesson.Three.polymorphismandinheritance.CookBook.pbj.shoppingList(Map("Peanut Butter" -> Grams(5),
+  *              "Jelly" -> KiloGrams(1)))
+  */
+
 object CookBook{
   val pbj = Receipe(Map("Peanut Butter" -> Grams(10),
                         "Jelly" -> KiloGrams(0.5),
