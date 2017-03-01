@@ -28,6 +28,9 @@ class Calculator {
     }
   }
 
+  /**
+    * Not only class but an object can also have case object
+    */
   case object Add extends Operator{
     override def operate(lhs: Int, rhs: Int) =  lhs + rhs
     override val toString = "+"
