@@ -1,4 +1,4 @@
-package Lesson.Two
+package lesson.two
 
 import scala.collection.mutable
 

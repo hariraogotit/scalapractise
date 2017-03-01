@@ -1,4 +1,4 @@
-package Lesson.Two
+package lesson.two
 
 /**
   * Created by Hari Rao on 25/02/17.

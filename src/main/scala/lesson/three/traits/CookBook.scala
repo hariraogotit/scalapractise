@@ -1,4 +1,4 @@
-package Lesson.Three.Traits
+package lesson.three.traits
 
 /**
   * Created by Hari Rao on 27/02/17.

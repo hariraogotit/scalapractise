@@ -1,4 +1,4 @@
-package Lesson.Three
+package lesson.three
 
 /**
   * Created by Hari Rao on 26/02/17.

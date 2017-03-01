@@ -1,4 +1,4 @@
-package Lesson.Three.polymorphismandinheritance
+package lesson.three.polymorphismandinheritance
 
 /**
   * Created by Hari Rao on 27/02/17.

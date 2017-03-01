@@ -1,4 +1,4 @@
-package Lesson.Three
+package lesson.three
 
 import scala.collection.mutable
 
