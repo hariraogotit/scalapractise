@@ -8,7 +8,7 @@ class Dog{
   override def toString: String = "Dog"
 }
 
-class Puppy extends Dog{
+class Puppy extends Doggy{
   override def toString: String = "Puppy"
 }
 
@@ -27,8 +27,8 @@ case class Box[A](private var content: A)
   */
 object Box{
 
-  def putPuppy[A >: Puppy](box: Box[A]): Unit = box.content = new Puppy
+  def putPuppy[A >: Puppie](box: Box[A]): Unit = box.content = new Puppie
 
-  def getPuppy[A <: Dog](box: Box[A]): A= box.content
+  def getPuppy[A <: Doggy](box: Box[A]): A= box.content
 
 }

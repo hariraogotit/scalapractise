@@ -14,8 +14,8 @@ package lesson.four.generics
   * Below is the improved version of Box.scala
   */
 
-class Dog
-class Puppy extends Dog
+class Doggy
+class Puppie extends Doggy
 
 /**
   *  - :- Contravariance. Same as lower bound but this is short cut and more readable
@@ -43,13 +43,13 @@ trait GetBox[+A]{
 
 object Boxes {
 
-   def putPuppy(box: PutBox[Puppy]) : Unit = box.put(new Puppy)
-   def getDog(box: GetBox[Dog]) : Dog = box.get()
+   def putPuppy(box: PutBox[Puppie]) : Unit = box.put(new Puppie)
+   def getDog(box: GetBox[Doggy]) : Doggy = box.get()
 
-  val dogPutBox = new PutBox[Dog] {}
-  val dogGetBox = new GetBox[Dog] {}
-  val puppyPutBox = new PutBox[Puppy] {}
-  val puppyGetBox = new GetBox[Puppy] {}
+  val dogPutBox = new PutBox[Doggy] {}
+  val dogGetBox = new GetBox[Doggy] {}
+  val puppyPutBox = new PutBox[Puppie] {}
+  val puppyGetBox = new GetBox[Puppie] {}
 
   putPuppy(puppyPutBox)
   getDog(puppyGetBox)
