@@ -29,7 +29,10 @@ class Calculator {
   }
 
   /**
-    * Not only class but an object can also have case object
+    * Not only class but an object can also have case object. A case object cannot take any parameter
+    * where as a case class must have at least one parameter. We know the reason why i.e object is static and
+    * cannot have status where as case class comes with unapply that needs status / class member fields
+    *
     */
   case object Add extends Operator{
     override def operate(lhs: Int, rhs: Int) =  lhs + rhs
